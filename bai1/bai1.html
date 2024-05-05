@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Thanh Thao</title>
+    <link rel="stylesheet" href="bai1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <!-- mở đầu -->
+    <header>
+        <!-- thẻ img để chứa ảnh -->
+        <img src="./img/thao.jpg" alt="avatar">
+        <!-- thẻ h1 stand for header 1 -->
+        <h1>Thanh Thảo</h1>
+        <!-- p stand for paragraph, đoạn văn nên để trong thẻ này để xử lý dễ hơn -->
+        <p>
+            Chào mừng bạn đến với trang web của tôi!
+        </p>
+    </header>
+    <!-- nội dung chính -->
+    <main>
+        <div class="container">
+            <div class="noidung">
+            <div class="box" id="thongtin">
+                <h2> Thông tin cá nhân </h2>
+                <ul>
+                    <li> Họ tên: Ngô Thị Thanh Thảo</li>
+                    <li> Ngày sinh: 18/10/2003 </li>
+                    <li> Quê quán: Quảng Nam </li>
+                    <li> Địa chỉ: 656/9/11 Quang Trung, P11, Gò Vấp, TPHCM</li>
+                </ul>
+            </div>
+            <div class="box" id="sothich">
+                <h2> Sở thích </h2>
+                <ul>
+                    <li> Xem phim </li>
+                    <li> Đọc sách </li>
+                    <li> Du lịch </li>
+                    <li> Nấu ăn </li>
+                </ul>
+            </div>
+            <div class="box" id="hocvan">
+                <h2> Học vấn </h2>
+                <ul>
+                    <li> Sinh viên năm 3 </li>
+                    <li> Ngành: Thương mại điện tử </li>
+                    <li> Trường Đại học Công nghiệp TPHCM </li>
+                    <li> GPA: 3.3/4.0 </li>
+                </ul>
+            </div>
+            </div> 
+        </div>
+        <h1> Thông tin liên hệ</h1>
+        <ul>
+            <li class="btn facebook">
+                <a href="https://www.facebook.com/nt.thanhhthaoo"><img src="./img/facebook.png"></a>
+            </li>
+            <li class="btn tiktok">
+                <a href="https://www.tiktok.com/@nth_thaoo"><img src="./img/tiktok.png"></a>
+            </li>
+            <li class="btn instagram">
+                <a href="https://www.instagram.com/__nttthaoo__/"><img src="./img/instagram.png"></a>
+            </li>
+           
+        </ul>
+    </main>
+    <!-- kết -->
+    <footer>
+        <div>Số điện thoại: 0363178200</div>
+        <div>Email: ntthanhthao1810@gmail.com</div>
+    </footer>
+
+    <div class="contact-form-container">
+        <h1> Hoặc đặt câu hỏi cho tôi </h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Nội dung:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Gửi</button>
+        </form>
+        <div id="response-message"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
